@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif; 
+}
+
+/*header*/
+.navbar{
+    background-color: #04263F;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-custom .navbar-brand,
+    .navbar-custom .navbar-nav .nav-link {
+        color: #ffffff; 
+    }
+
+    .navbar-custom .navbar-toggler-icon {
+        filter: invert(1); 
+    }
+    .navbar-custom .navbar-toggler-icon:focus {
+        box-shadow: none; /* Remove box-shadow on focus */
+    }
+    .logo{
+        width: 120px;
+        height: 60px;
+    }
+    
+    .social{
+        display: flex;
+        width: 150px;
+        justify-content: space-between;
+    }
+    .s-link{
+       width: 36px;
+       height: 36px;
+       
+    }
+    .s-img{
+        filter: brightness(0) invert(1);
+        width: 36px;
+        height: 36px;
+        object-fit: cover;
+        border-radius: 40px;
+        transition: 1s;
+    }
+    .s-img:hover{
+        transform: scale(1.2);
+    }
+
+/*end of header*/
+/*hero*/
+#hero{
+    width: 100%;
+    height: fit-content;
+    background-color: #ffffff;
+    padding-top: 100px;
+    
+}
+
+.btn-primary{
+    width: 120px;
+    height: 56px;
+    background-color: #9B6610;
+    border: none;
+}
+.btn-primary:hover{
+    background-color: #04263F;
+}
+.btn-primary a{
+    color: #ffffff;
+    text-decoration: none;
+}
+/*end of hero*/
+/*about*/
+#about{
+    width: 100%;
+    height: fit-content;
+}
+.service-card{
+    display: flex;
+    flex-direction: row;
+}
+.card-content{
+    padding: 0 20px;
+}
+/*end of about*/
+/*services*/
+#services{
+    background-image: url(images/t-destinations\ bg.png);
+    background-position: right;
+    background-repeat: repeat-y;
+}
+/*end of services*/
+/*reviews*/
+#reviews{
+    width: 100%;
+    height: fit-content;
+    background-color: #F3F1EC;
+}
+.c-img{
+    width: 200px;
+    height: 200px;
+}
+.carousel-indicators{
+    padding-top: 200px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    color: white !important; /* Set color to white */
+  }
+/*end of reviews*/
+/*contact*/
+#contact{
+    background-image: url(images/sub-d1.png);
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.btn-outline-success{
+    border: none;background-color: #9B6610;color: #fff;transform: 0.4s;
+}
+.btn-outline-success:hover{
+    background-color: #04263F;
+}
+.f-input{
+    margin-bottom: 23px; width: 100%; height: 48px; border: none; padding-right: 21px; border: #04263F solid 1px;border-radius: 10px;
+    transition: 0.4s; 
+    outline: #F3F1EC;  
+}
+
+.f-input:focus{
+    
+    border: #9B6610 1px solid;
+}
+/*end of contact*/
+/*footer*/
+footer{
+    background-color: #04263F;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.footer-f{
+    color: #ffffff;
+}
+/*end of footer*/
+/*scroll up button */
+.scroll-up-btn{
+    position: fixed;
+    bottom: 50px;
+    border-radius: 50%;
+    z-index: 400;
+    outline: none;
+    border: none;
+    right: 35px;
+    width: 50px;
+    height: 50px;
+    background-color: #1E1D4C;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    transition: display 1s ease;
+}
+.scroll-up-btn.showUp{
+    display: block;
+}
+
+.scroll-up-btn i{
+    font-size: 18px;
+    color: #fff;
+}
+.up {
+    filter: brightness(0) invert(1);
+  }
+  /**/
+  /*menu button*/
+.menu-btn{
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border: none;
+}
+.menu-btn:focus{
+    outline: none;
+}
+span.menu-btn-line{
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 2px;
+    background-color: #ffffff;
+    transition: transform 0.4s ease;
+}
+.menu-btn-top.rotate{
+    transform: rotate(45deg) translateY(13px);
+}
+.menu-btn-bottom.rotate{
+    transform: rotate(-45deg) translateY(-13px);
+}
+.menu-btn-mid{
+    transition: transform 0.4s ease;
+}
+.menu-btn-mid.rotate{
+    transform: translateX(-1000%);
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+  }
+/*end of menu button*/
+
+.wa{
+    position: fixed;
+    bottom: 50px;
+    border-radius: 50%;
+    z-index: 400;
+    outline: none;
+    border: none;
+    left: 35px;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+}
+.wa img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+
+
+
+
+#contact{
+    width: 100%;
+    height: fit-content;
+    background-color: #ffffff;
+    padding-top: 40px;
+  
+}
+#services{
+    width: 100%;
+    height: fit-content;
+    background-color: #ffffff;
+    padding-top: 40px;
+  
+}
+/*card*/
+.card{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    transition: 0.3s;
+}
+.card:hover{
+   background-color: #ddd;
+}
+
+@media (max-width: 576px) {
+    .card:hover{
+        background-color: #fff;
+     }
+  }
+
+/*whatsapp*/
+.btn-danger{
+    width: 100%;
+    border: none;background-color: #4CAF50;color: #fff;transform: 0.4
+}
+.btn-danger:hover{
+    background-color: #04263F;  
+}
+.c-what{
+    width: 36px;
+    height: 36px;
+}
